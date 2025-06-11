@@ -1,0 +1,68 @@
+<section id="projects" class="py-5 bg-dark">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold text-white">Mis Proyectos</h2>
+            <p class="lead text-white-50 mb-5">
+              Aquí hay una selección de algunos proyectos en los que he trabajado.
+            </p>
+          </div>
+        </div>
+
+        <!-- FIX: Reemplazado el HTML de Bootstrap JS por el componente de ng-bootstrap -->
+        <ngb-carousel [interval]="5000" [pauseOnHover]="true" [wrap]="true" [animation]="true">
+          
+          <!-- Proyecto 1 -->
+          <ng-template ngbSlide>
+            <div class="project-card-wrapper">
+              <div class="card text-bg-dark project-card">
+                <img src="assets/formsproyecto.PNG" class="card-img-top" alt="Imagen del Proyecto 1">
+                <div class="card-body p-4">
+                  <div>
+                    <h5 class="card-title fw-bold">SISTEMA DE GESTIÓN DE HOTELES</h5>
+                    <p class="card-text text-white-50">Sistema desarrollado en Windows Forms para un gestor de hoteles.
+                        Base de datos SQL Server. </p>
+                  </div>
+                  <a href="https://github.com/andynogamer/PIA_MAD.STUDY" class="btn btn-primary mt-auto">Ver Repositorio <i class="bi bi-github ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Proyecto 2 -->
+          <ng-template ngbSlide>
+            <div class="project-card-wrapper">
+              <div class="card text-bg-dark project-card">
+                <img src="assets/unamangular.PNG" class="card-img-top" alt="Imagen del Proyecto 2">
+                <div class="card-body p-4">
+                   <div>
+                    <h5 class="card-title fw-bold">PÁGINA UNAM CON PRINCIPIOS UX/UI</h5>
+                    <p class="card-text text-white-50">Se creó desde cero la página de la UNAM respetando los principios de UX/UI. Angular 16</p>
+                  </div>
+                  <a href="https://github.com/andynogamer/material-uxui-master" class="btn btn-primary mt-auto">Ver Repositorio <i class="bi bi-github ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Proyecto 3 -->
+          <ng-template ngbSlide>
+            <div class="project-card-wrapper">
+              <div class="card text-bg-dark project-card">
+                <img src="assets/cmpinsta.PNG" class="card-img-top" alt="Imagen del Proyecto 3">
+                <div class="card-body p-4">
+                  <div>
+                    <h5 class="card-title fw-bold">COMPARADOR DE SEGUIDORES DE INSTAGRAM</h5>
+                    <p class="card-text text-white-50">Un comparador de seguidores de instagram hecho con JS, CSS y HTML. Se hostea en netlify. </p>
+                  </div>
+                  <a href="https://igfollowcmp.netlify.app" class="btn btn-primary mt-auto">Ver Página<i class="bi bi-github ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+        </ngb-carousel>
+      </div>
+    </section>
+
+<div class="filler bg-dark"></div>
